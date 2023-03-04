@@ -1,0 +1,41 @@
+- var product = ['New', 'Upcoming', 'Man collection', 'On sale', 'Live Demo'];
+- var resources = ['Instagram post', 'Blog', 'Live demo'];
+- var contact = ['Live Chat', 'Mail us'];
+footer.footer 
+    .container 
+        .footer__block 
+            .footer__main 
+                .footer__sac 
+                    h1.sac__title SAC 
+                    p.sac__cont We help customer  to find best produt near them, not time spent searchig for best one.
+                    ul.sac__list 
+                        li 
+                            a.sac__link(href="#") 
+                                img(src="../assets/img/facered.svg", alt="")
+                        li 
+                            a.sac__link(href="#") 
+                                img(src="../assets/img/twitred.svg", alt="")
+                        li 
+                            a.sac__link(href="#") 
+                                img(src="../assets/img/linkedred.svg", alt="")
+                .footer__product    
+                    h2.footer__title Product 
+                    ul.footer__list
+                        each val in product
+                            li 
+                                a.footer__link(href="#") #{val}
+                .footer__resources 
+                    h2.footer__title Resources 
+                    ul.footer__list
+                        each val in resources
+                            li 
+                                a.footer__link(href="#") #{val}
+                .footer__contact 
+                    h2.footer__title Resources 
+                    ul.footer__list
+                        each val in contact
+                            li 
+                                a.footer__link(href="#") #{val}
+            .footer__extra
+                p.footer__extra-first Copyright © 2021 Pansy
+                p.footer__extra-first Created by  Pansy

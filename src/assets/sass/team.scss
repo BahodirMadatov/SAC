@@ -1,0 +1,126 @@
+.team {
+    &__cont {
+        margin-bottom: 92px;
+    }
+
+    &__title {
+        font-family: 'Larken-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        color: #24232B;
+    }
+
+    &__descr {
+        max-height: 283px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        display: flex;
+        background: #E04259;
+        flex-direction: column;
+        border-radius: 20px 0px;
+        padding: 34px 26px;
+        transition: 0.5s linear;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__port {
+        display: flex;
+        opacity: 1;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    &__boxes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+    }
+
+    &__gang {
+        padding-top: 77px;
+        max-width: 265px;
+        width: 100%;
+        transition: 0.5s linear;
+
+        &:hover {
+            padding-top: 60px;
+        }
+    }
+
+
+
+    &__block {
+        position: relative;
+        border-radius: 20px 0px;
+        margin-bottom: 24px;
+
+        &:hover {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__notes {
+        padding-bottom: 18px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 100%;
+        color: #24232B;
+    }
+
+    &__position {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #8A888D;
+    }
+}
+
+
+@media(max-width: 1400px) {
+    .team {
+        &__boxes {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+
+        &__gang {
+            padding-top: 0;
+        }
+
+        &__title {
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 620px) {
+    .team__boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

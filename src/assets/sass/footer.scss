@@ -1,0 +1,153 @@
+.footer {
+    background: #FAEFF0;
+
+    &__block {
+        padding: 84px 36px 44px 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        padding-bottom: 58px;
+    }
+
+    &__sac {
+        max-width: 274px;
+        width: 100%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        color: #24232B;
+        padding-bottom: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    &__link {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        color: #8A888D;
+    }
+
+    &__extra {
+        display: flex;
+        justify-content: space-between;
+
+        &-first {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #8A888D;
+        }
+    }
+}
+
+.sac {
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        color: #24232B;
+        padding-bottom: 13px;
+    }
+
+    &__cont {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #8A888D;
+        padding-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+        width: 28px;
+        height: 28px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 700px) {
+    .sac {
+        &__title {
+            font-size: 18px;
+        }
+
+        &__cont {
+            font-size: 10px;
+            padding-bottom: 20px;
+        }
+
+    }
+
+    .footer {
+        &__sac {
+            max-width: 150px;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 12px;
+        }
+
+        &__link {
+            font-size: 10px;
+        }
+    }
+}
+
+@media(max-width: 520px) {
+    .footer {
+        &__sac {
+            max-width: 100px;
+            width: 100%;
+        }
+
+        &__block {
+            padding: 44px 0px 24px;
+        }
+
+        &__title {
+            font-size: 9px;
+        }
+
+        &__link {
+            font-size: 9px;
+        }
+
+        &__list {
+            gap: 8px;
+        }
+    }
+
+    .sac{
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

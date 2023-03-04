@@ -1,0 +1,17 @@
+- var links = ['About us', 'Service', 'Private Detective', 'Team', 'Contact Us']
+header.header 
+    .container 
+        
+        nav.header__nav
+            a.logo(href="#") SAC
+            ul.header__list 
+                each val in links 
+                    li 
+                        a.header__link(href="#") #{val}
+                li 
+                    a.header__more(href="#") Contact Us 
+            a.header__btn(href="#")
+                span.bars  
+                span.bars  
+                span.bars 
+.header__abs 

@@ -1,0 +1,127 @@
+.private {
+    position: relative;
+    background: #FAEFF0;
+    margin-bottom: 173px;
+
+    &__cont {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 102px;
+        padding-bottom: 186px;
+    }
+
+    &__fbox {
+        max-width: 539px;
+        width: 100%;
+    }
+
+    &__sbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 510px;
+        align-items: start;
+    }
+
+    &__title {
+        font-family: 'Larken-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0.5px;
+        color: #24232B;
+        margin-bottom: 26px;
+    }
+
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #8A888D;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        padding: 16px 40px;
+        background: #BD011C;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+
+    }
+
+    &__extra {
+        position: absolute;
+        bottom: -43px;
+        left: 99px;
+    }
+}
+
+.curve {
+    position: absolute;
+    bottom: 35px;
+    left: 426px;
+}
+
+
+@media(max-width: 1400px) {
+    .curve {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .private {
+        &__extra {
+            display: none;
+        }
+
+        &__cont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding-bottom: 80px;
+            padding-top: 80px;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .private {
+        &__cont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        img {
+            width: 100%;
+        }
+        }
+        &__sbox {
+            width: 300px;
+        }
+
+        &__fbox {
+            max-width: 300px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__link {
+            padding: 12px 25px;
+            font-size: 14px;
+        }
+    }
+}

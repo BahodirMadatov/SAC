@@ -1,0 +1,64 @@
+$fonts: ('Inter', 'Medium', 500),
+('Inter', 'Regular', 400),
+('Larken', 'Medium', 500),
+('Larken', 'Bold', 700);
+
+@each $font,
+$mod,
+$w in $fonts {
+    @font-face {
+        font-family: $font;
+        src: url("../fonts/#{$font}-#{$mod}.ttf");
+        font-weight: $w;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    font-family: 'Larken', sans-serif;
+    outline: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFDFE;
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    position: relative;
+    z-index: 10;
+
+}
+
+@import 'header';
+
+
+//header content starts
